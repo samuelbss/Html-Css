@@ -9,39 +9,60 @@
     padding: 0px;
 }
 
+html,body{
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
+    color: white;
     text-align: center; 
 }
 
 header > h1 {
     font-family: 'Passion one', Helvetica, sans-serif;
-    font-size: 8em;
-    color: white;
     padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8em;
 }
 
 header > p {
-    color: white;
-    font-size: 1.2em;
     padding-bottom: 50px;
-    
+    font-size: 1.2em;  
 }
 
-header a:hover {
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-header a {
-    color: white;
-    text-decoration: none;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+
 }
 
-section {
-    font-family: 'Sriracha', Helvetica, sans-serif;
-    font-size: 3em;
-    padding: 65.7px 0px 65.7px 30px;
+section.normal {
+    background-color: white;
+    color: black;
  
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 footer {
@@ -50,15 +71,4 @@ footer {
     text-align: center;
     font-size: 1.2em;
     padding: 10px;
-}
-
-
-footer a {
-
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
